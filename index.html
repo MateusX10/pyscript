@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script> 
+    <title>python front-end</title>
+    <py-env>
+        - numpy
+        - matplotlib
+    </py-env>
+</head>
+<body>
+    <p>Usando python no front-end</p>
+    <py-script>
+        
+    
+    </py-script>
+    <div id="GRAFICO"></div>
+
+    <py-script output="GRAFICO">
+        import matplotlib.pyplot
+        x,y = 5,10
+        fig,ax = matplotlib.pyplot.subplots()
+        ax.scatter(x,y)
+        fig
+
+
+    </py-script>
+</body>
+</html>
